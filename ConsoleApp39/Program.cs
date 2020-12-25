@@ -44,11 +44,82 @@ namespace ConsoleApp39
 
             });
 
+            cableTVsubscribers.AddAbonent(new Abonent()
+            {
+                Surname = "name-3",
+                Addres = "Addres-3",
+                Phone = "333",
+                District = "District-2",
+                NumberContract = 333,
+                InstallationCost = 40,
+                SubscriptionPayment_month = 100,
+                DateContractCreation = DateTime.Now,
+                DateLastPaymen = DateTime.Now.AddMonths(5)
+
+            });
+
+            cableTVsubscribers.AddAbonent(new Abonent()
+            {
+                Surname = "name-4",
+                Addres = "Addres-4",
+                Phone = "444",
+                District = "District-4",
+                NumberContract = 444,
+                InstallationCost = 50,
+                SubscriptionPayment_month = 150,
+                DateContractCreation = DateTime.Now,
+                DateLastPaymen = DateTime.Now.AddMonths(6)
+
+            });
+
+            cableTVsubscribers.AddAbonent(new Abonent()
+            {
+                Surname = "name-5",
+                Addres = "Addres-5",
+                Phone = "555",
+                District = "District-5",
+                NumberContract = 333,
+                InstallationCost = 50,
+                SubscriptionPayment_month = 100,
+                DateContractCreation = DateTime.Now,
+                DateLastPaymen = DateTime.Now.AddMonths(2)
+
+            });
+
+            cableTVsubscribers.AddAbonent(new Abonent()
+            {
+                Surname = "name-6",
+                Addres = "Addres-6",
+                Phone = "666",
+                District = "District-6",
+                NumberContract = 333,
+                InstallationCost = 40,
+                SubscriptionPayment_month = 150,
+                DateContractCreation = DateTime.Now,
+                DateLastPaymen = DateTime.Now.AddMonths(4)
+
+            });
+
+            cableTVsubscribers.AddAbonent(new Abonent()
+            {
+                Surname = "name-6",
+                Addres = "Addres-6",
+                Phone = "666",
+                District = "District-6",
+                NumberContract = 333,
+                InstallationCost = 40,
+                SubscriptionPayment_month = 150,
+                DateContractCreation = DateTime.Now,
+                DateLastPaymen = DateTime.Now.AddMonths(4)
+
+            });
 
 
             //cableTVsubscribers.Display();
             //cableTVsubscribers.FindByPhone("111");
 
+
+            cableTVsubscribers.DelAbonent(333);
 
             cableTVsubscribers.Display();
             Console.WriteLine( cableTVsubscribers.Abonents[0].CalcCostPaymentsAllTime());
