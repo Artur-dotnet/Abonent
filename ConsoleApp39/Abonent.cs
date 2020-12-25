@@ -22,7 +22,7 @@ namespace ConsoleApp39
 
         public override string ToString()
         {
-            return $"{Surname,15}{NumberContract,15}{SubscriptionPayment_month,15}{InstallationCost,15}{Phone,20}{Addres,20}{District,30}" +
+            return $"{Surname,15}{NumberContract,15}{SubscriptionPayment_month,15}{InstallationCost,15}{Phone,20}{Addres,30}{District,30}" +
                 $"{DateContractCreation.Year,20}.{DateContractCreation.Month}.{DateContractCreation.Day}" +
                 $"{DateLastPaymen.Year,20}.{DateLastPaymen.Month}.{DateLastPaymen.Day}";
         }
