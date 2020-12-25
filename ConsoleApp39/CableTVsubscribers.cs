@@ -44,9 +44,13 @@ namespace ConsoleApp39
             }
 
             if (flag)
+            {
                 Console.WriteLine("  Абонент успешно удален");
+            }
             else
+            {
                 Console.WriteLine("  Абонент не найден");
+            }
         }
 
 
@@ -108,6 +112,7 @@ namespace ConsoleApp39
 
             return sum;
         }
+
 
         public CableTVsubscribers GetGroup(string district)
         {
